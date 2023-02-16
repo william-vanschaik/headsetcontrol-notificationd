@@ -8,14 +8,14 @@ For a list of supported devices please check [Sapd/HeadsetControl](https://githu
 **Simon Ingelsson rewrote this daemon in pure bash:**  
 https://gitlab.com/devnore/headsetcontrol-notificationd
 
+This bash implementation is also very good I probably didn't need to be a goof and redo it in Python. 
+
 ### "Design"
-headsetcontrol-notificationd was hacked together in PHP and polls the headsetcontrol executable at a configurable interval. 
+headsetcontrol-notificationd was hacked together in Python and polls the headsetcontrol executable at a configurable interval. 
 This isn't an elegant solution at all, but it works (pretty well).  
 
 ### Requirements
-php-cli, HeadsetControl and notify-send  
-
-on Arch: `headsetcontrol` (AUR), `php` (extra) and `libnotify` (extra)
+Python3, HeadsetControl and notify-send  
 
 You will also need a notification daemon if you are not using a desktop environment.
 
