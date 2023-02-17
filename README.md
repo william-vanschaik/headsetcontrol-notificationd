@@ -11,6 +11,8 @@ https://gitlab.com/devnore/headsetcontrol-notificationd
 This bash implementation is also very good I probably didn't need to be a goof and redo it in Python. 
 
 ### "Design"
+Thanks to https://github.com/Manawyrm/headsetcontrol-notificationd for original design.
+
 headsetcontrol-notificationd was hacked together in Python and polls the headsetcontrol executable at a configurable interval. 
 This isn't an elegant solution at all, but it works (pretty well).  
 
