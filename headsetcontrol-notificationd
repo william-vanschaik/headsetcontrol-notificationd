@@ -31,7 +31,7 @@ def stateChanged(name, newState):
 		
 		# When device is turned off (Unavailable) or charging do not set int state, just send a notification
 		if (newState == "Unavailable"):
-			sendNotification(name, "Device disconnected!", "headset")
+			sendNotification(name, "disconnected!", "headset")
 		elif (newState == "Charging"):
 			sendNotification(name, "Charger connected!", "battery")
 		# This should just be a change in battery percentage so parse the new state as an int
@@ -39,7 +39,7 @@ def stateChanged(name, newState):
 			newStateInt = int(newState)
 			# Check if previous state was disconnecct or charging if so send a notification
 			if (oldState == "Unavailable"):
-				sendNotification(name, "Charger connected!", "headset")
+				sendNotification(name, "connected!", "headset")
 				oldStateInt = 0
 			elif (oldState == "Charging"):
 				sendNotification(name, "Charger disconnected!", "battery")
